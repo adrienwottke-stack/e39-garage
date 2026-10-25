@@ -1,0 +1,100 @@
+/* The tuning bay is the main workspace. Records remain in the side navigation. */
+.studio-shell { background: #111820; }
+.studio-shell main { padding: 0 24px 24px; }
+.studio-shell .topbar { height: 44px; border-bottom-color: #26323d; }
+.studio-shell .sidebar { background: #111820; border-right-color: #26323d; }
+.studio-shell .sidebar nav { margin-top: 42px; }
+.studio-shell .nav-item[aria-current="page"] { background: #203341; color: #b9e1fb; }
+.design-studio { --studio-line: #2d3c48; padding-top: 16px; }
+.design-studio .studio-heading { gap: 12px; margin-bottom: 14px; }
+.design-studio .studio-heading > div { flex: 1; }
+.design-studio .studio-heading h1 { font-size: clamp(30px, 3vw, 42px); margin-top: 2px; letter-spacing: .2px; }
+.design-studio .studio-heading > button { min-height: 44px; font-size: 11px; padding: 10px 13px; background: #17232e; border-color: #344553; }
+.design-studio .studio-mode-bar { margin: 0 0 10px; }
+.design-studio .studio-mode-bar > div { background: #111820; border-color: #2d3c48; padding: 3px; }
+.design-studio .studio-mode-bar button { min-height: 40px; padding: 8px 17px; }
+.design-studio .studio-mode-bar button[aria-pressed="true"] { background: #263e50; color: #d7eeff; }
+.garage-presets { margin: 0 0 12px; border-top: 1px solid #26323d; }
+.garage-presets > summary { display: flex; align-items: center; gap: 8px; color: #94a8b8; cursor: pointer; min-height: 34px; font-size: 11px; width: fit-content; }
+.garage-presets > summary::marker { content: ""; }
+.garage-presets[open] > summary > svg:last-child { transform: rotate(90deg); }
+.garage-presets .studio-ideas { margin: 2px 0 12px; }
+.design-studio:not(.render-mode) .studio-workspace { grid-template-columns: minmax(0, 1fr) 326px; grid-template-rows: clamp(440px, calc(100dvh - 290px), 760px) 62px; gap: 0 12px; }
+.design-studio .studio-viewport { background: #111820; border-color: #2c3a47; border-radius: 8px 8px 0 0; }
+.design-studio .studio-controls { background: #17212b; border-color: #2c3a47; border-radius: 8px; }
+.design-studio .studio-panel-tabs { background: #17212b; padding: 6px; border-bottom-color: #2d3c48; }
+.design-studio .studio-panel-tabs button { min-height: 40px; }
+.design-studio .studio-panel-tabs button[aria-pressed="true"] { background: #293c4a; }
+.design-studio .studio-control-heading { padding: 17px 17px 0; }
+.design-studio .studio-control-heading h2 { font-size: 30px; margin: 2px 0 6px; }
+.design-studio .studio-control-heading > p:last-child { line-height: 1.55; color: #9bafbf; }
+.design-studio .studio-fields { padding: 14px 17px; }
+.design-studio .studio-toolbelt { padding: 5px 7px; gap: 3px; background: #17232e; border-color: #2c3a47; }
+.design-studio .studio-toolbelt button { min-width: 0; flex: 1; padding: 8px 5px; min-height: 48px; gap: 5px; font-size: 11px; }
+.design-studio .studio-toolbelt button.active { background: #283f50; color: #d3ecff; border-color: #4c738b; }
+.design-studio .studio-scene-label { top: 16px; left: 18px; right: 18px; }
+.design-studio .studio-cameras { top: 45px; right: 14px; left: auto; width: max-content; max-width: calc(100% - 28px); justify-content: flex-end; gap: 3px; }
+.design-studio .studio-cameras button { background: #14212bdc; min-height: 36px; padding: 6px 10px; }
+.design-studio .studio-view-switch { bottom: 31px; }
+.design-studio .studio-stage-hint { bottom: 13px; font-size: 9px; color: #a1b1bc; }
+.garage-part-stepper { display: flex; align-items: center; gap: 8px; padding: 0 0 10px; }
+.garage-part-stepper button { display: grid; place-items: center; flex: 0 0 44px; min-height: 44px; border: 1px solid #3c5264; border-radius: 5px; background: #20303d; }
+.garage-part-stepper > span { flex: 1; min-width: 0; text-align: center; }
+.garage-part-stepper strong { display: block; font-weight: 500; font-size: 12px; }
+.garage-part-stepper small { display: block; color: #8ca7bb; font-size: 10px; margin-top: 3px; }
+.design-studio .rim-options { grid-template-columns: repeat(2,minmax(0,1fr)); max-height: 274px; overflow-y: auto; scrollbar-width: thin; scrollbar-color: #4c6479 #15202a; overscroll-behavior: contain; padding: 2px; gap: 6px; }
+.design-studio .rim-options button { min-width: 0; min-height: 98px; padding: 8px 5px; }
+.design-studio .rim-options button > svg:first-child { width: 52px; height: 52px; }
+.design-studio .rim-options button > svg:last-child:not(:first-child) { width: 14px; height: 14px; }
+.design-studio .rim-options button > span { font-size: 10px; }
+.garage-baseline { border-top: 1px solid #2d3c48; padding: 0 17px 10px; }
+.garage-baseline > summary { min-height: 44px; display: flex; align-items: center; justify-content: space-between; gap: 8px; font-size: 11px; color: #94acbf; cursor: pointer; }
+.garage-baseline .studio-reference { padding: 8px 0; border-top: 0; }
+.design-studio .parts-search { padding: 0 17px 12px; margin-top: 0; }
+.design-studio .parts-search summary { min-height: 44px; display: flex; align-items: center; color: #b1c6d6; font-size: 11px; }
+.design-studio .studio-drafts { background: #151f28; margin-top: 16px; border-color: #2b3b47; padding: 18px 20px; }
+.design-studio .drafts-heading h2 { font-size: 26px; }
+.design-studio .studio-footer { color: #8194a2; }
+@media (min-width: 1600px) { .design-studio:not(.render-mode) .studio-workspace { grid-template-columns: minmax(0,1fr) 370px; } }
+@media (min-width: 721px) and (max-width: 1050px) {
+  .studio-shell main { padding-left: 16px; padding-right: 16px; }
+  .design-studio:not(.render-mode) .studio-workspace { grid-template-columns: minmax(0,1fr) 292px; }
+  .design-studio .studio-cameras { justify-content: flex-start; }
+}
+@media (max-width: 720px) {
+  .studio-shell main { margin-left: 0; padding: 0 10px 84px; }
+  .studio-shell .sidebar { height: 64px; }
+  .studio-shell .sidebar nav { margin-top: 0; }
+  .studio-shell .topbar { height: 42px; }
+  .design-studio { padding-top: 12px; }
+  .design-studio .studio-heading { display: grid; grid-template-columns: minmax(0,1fr) auto; gap: 6px 10px; margin-bottom: 10px; }
+  .design-studio .studio-heading > div { grid-column: 1 / -1; }
+  .design-studio .studio-heading h1 { font-size: 33px; }
+  .design-studio .studio-heading > button { width: auto; min-width: 0; min-height: 44px; padding: 9px 12px; justify-content: center; }
+  .design-studio .studio-heading .catalog-open-button { grid-column: 1; justify-self: start; }
+  .design-studio .studio-heading .studio-secondary { grid-column: 2; }
+  .design-studio .studio-mode-bar { gap: 0; margin-bottom: 6px; }
+  .design-studio .studio-mode-bar > span { display: none; }
+  .design-studio .studio-mode-bar > div { width: 100%; }
+  .design-studio .studio-mode-bar button { min-height: 44px; flex: 1; }
+  .garage-presets { margin-bottom: 8px; }
+  .garage-presets > summary { min-height: 44px; }
+  .design-studio:not(.render-mode) .studio-workspace { grid-template-columns: minmax(0,1fr); grid-template-rows: 350px 62px auto; gap: 0; }
+  .design-studio .studio-viewport { grid-column: 1; grid-row: 1; }
+  .design-studio .studio-controls { grid-column: 1; grid-row: 3; margin-top: 12px; overflow: visible; }
+  .design-studio .studio-toolbelt { grid-column: 1; grid-row: 2; }
+  .design-studio .studio-cameras { top: 39px; left: 8px; right: 8px; width: auto; max-width: none; justify-content: center; flex-wrap: wrap; }
+  .design-studio .studio-cameras button { min-height: 44px; padding: 7px 8px; font-size: 10px; }
+  .design-studio .studio-cameras button:nth-last-child(-n+2) { display: none; }
+  .design-studio .studio-scene-label { left: 12px; right: 12px; font-size: 10px; }
+  .design-studio .studio-preview-label { font-size: 7px; }
+  .design-studio .studio-view-switch { left: 12px; right: 12px; bottom: 28px; transform: none; width: auto; }
+  .design-studio .studio-stage-hint { font-size: 8px; white-space: normal; text-align: center; left: 8px; right: 8px; bottom: 9px; }
+  .design-studio .studio-panel-tabs { position: static; }
+  .design-studio .studio-panel-tabs button, .parts-category-tabs button, .parts-stepper button, .parts-family-row select { min-height: 44px; }
+  .design-studio .rim-options { grid-template-columns: repeat(3,minmax(0,1fr)); max-height: 294px; }
+  .design-studio .rim-options button { min-height: 88px; }
+  .design-studio .studio-drafts { padding: 15px; }
+  .design-studio .studio-toolbelt button { font-size: 9px; gap: 3px; }
+}
+@media (prefers-reduced-motion: reduce) { .design-studio *, .design-studio *::before, .design-studio *::after { transition: none !important; scroll-behavior: auto !important; } }

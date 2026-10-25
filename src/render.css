@@ -1,0 +1,523 @@
+.studio-mode-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin: -3px 0 18px;
+}
+.studio-mode-bar > div {
+  display: flex;
+  gap: 4px;
+  padding: 4px;
+  border: 1px solid #354556;
+  border-radius: 8px;
+  background: #151e28;
+}
+.studio-mode-bar button {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 10px 18px;
+  font-size: 12px;
+  color: #94aabd;
+  border-radius: 5px;
+}
+.studio-mode-bar button[aria-pressed="true"] {
+  background: #b7cbd9;
+  color: #142332;
+}
+.studio-mode-bar > span {
+  font-size: 11px;
+  color: #7e94a9;
+}
+.design-studio .studio-wordmark {
+  display: none;
+}
+.design-studio[data-environment="pearl"] .studio-scene-label,
+.design-studio[data-environment="sunset"] .studio-scene-label {
+  color: #293846;
+}
+.design-studio[data-environment="pearl"] .studio-preview-label,
+.design-studio[data-environment="sunset"] .studio-preview-label {
+  color: #344451;
+}
+.design-studio[data-environment="pearl"] .studio-live-dot,
+.design-studio[data-environment="sunset"] .studio-live-dot {
+  background: #33516c;
+  box-shadow: none;
+}
+.design-studio[data-environment="pearl"] .studio-stage-hint,
+.design-studio[data-environment="sunset"] .studio-stage-hint {
+  color: #344451;
+}
+.render-mode .studio-workspace {
+  grid-template-rows: auto;
+  align-items: start;
+}
+.render-mode .studio-viewport {
+  border-radius: 10px;
+  grid-column: 1;
+  grid-row: 1;
+  height: auto;
+  min-height: 0;
+  max-height: none;
+  align-self: start;
+}
+.render-mode .studio-controls {
+  grid-column: 2;
+  grid-row: 1;
+  max-height: calc(100vh - 225px);
+  min-height: 460px;
+  border-radius: 10px;
+  overflow: auto;
+  scrollbar-gutter: stable;
+}
+.render-mode .studio-toolbelt,
+.render-mode .studio-drafts,
+.render-mode .studio-cameras,
+.render-mode .studio-view-switch,
+.render-mode .studio-stage-hint {
+  display: none;
+}
+.render-mode .studio-scene-label {
+  top: 18px;
+  left: 20px;
+  right: 20px;
+  font-size: 10px;
+}
+.render-controls {
+  padding: 0 20px 20px;
+}
+.render-look-picker {
+  padding: 18px 20px;
+  border-bottom: 1px solid #334353;
+}
+.render-look-picker label {
+  display: block;
+  font-size: 10px;
+  color: #90a7bc;
+  margin-bottom: 8px;
+}
+.render-look-picker select {
+  width: 100%;
+  min-height: 44px;
+  border: 1px solid #3f5367;
+  background: #1d2a37;
+  color: #dbe6ef;
+  border-radius: 5px;
+  padding: 9px;
+  font-size: 12px;
+}
+.render-panel-intro {
+  padding: 24px 0 4px;
+}
+.render-panel-intro h2 {
+  font-size: 30px;
+  font-weight: 500;
+  margin: 6px 0 9px;
+}
+.render-panel-intro p {
+  color: #93a7b9;
+  font-size: 12px;
+  line-height: 1.6;
+}
+.render-panel-intro .render-orbit-help{font-size:10px;color:#8299ac;margin-top:9px}
+.render-controls fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  min-width: 0;
+}
+.render-controls .studio-label {
+  margin: 23px 0 10px;
+  display: block;
+  color: #c6d6e3;
+  font-size: 12px;
+}
+.environment-options {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.environment-options button {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 10px;
+  border: 1px solid #35475a;
+  border-radius: 6px;
+  min-height: 62px;
+  text-align: left;
+  background: #192532;
+}
+.environment-options button[aria-pressed="true"] {
+  border-color: #9cbdce;
+  background: #2a3b49;
+}
+.environment-options i {
+  width: 34px;
+  height: 38px;
+  border-radius: 3px;
+  flex-shrink: 0;
+  box-shadow:
+    inset 0 -13px 0 #00000024,
+    inset 0 2px 0 #ffffff36;
+}
+.environment-options strong {
+  display: block;
+  font-weight: 500;
+  font-size: 12px;
+  color: #d2e0ea;
+  margin-bottom: 4px;
+}
+.environment-options small {
+  display: block;
+  font-size: 9px;
+  color: #9eb0c0;
+  line-height: 1.4;
+}
+.render-segments {
+  display: flex;
+  gap: 4px;
+}
+.render-segments button {
+  flex: 1;
+  min-width: 0;
+  min-height: 44px;
+  padding: 8px 5px;
+  border: 1px solid #3a4a5d;
+  border-radius: 5px;
+  color: #a3b6c6;
+  font-size: 11px;
+  background: #192532;
+}
+.render-segments button[aria-pressed="true"] {
+  background: #314a5e;
+  color: #e5f0f6;
+  border-color: #88aabd;
+}
+.render-camera-segments{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));}
+.render-slider {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 10px;
+  font-size: 12px;
+  color: #c6d6e3;
+  margin-top: 24px;
+}
+.render-slider output {
+  font-size: 11px;
+  color: #97b8cc;
+  font-variant-numeric: tabular-nums;
+}
+.render-slider input {
+  grid-column: 1/-1;
+  width: 100%;
+  height: 34px;
+  accent-color: #a5c7dc;
+  cursor: pointer;
+}
+.render-toggle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 44px;
+  margin: 13px 0 0;
+  font-size: 12px;
+  color: #b9cbd9;
+  cursor: pointer;
+}
+.render-toggle input {
+  width: 18px;
+  height: 18px;
+  accent-color: #a7c7dc;
+}
+.render-formats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4px;
+}
+.render-formats button {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  justify-content: center;
+  align-items: center;
+  min-height: 75px;
+  border: 1px solid #3a4a5d;
+  border-radius: 5px;
+  background: #192532;
+  color: #99adbd;
+  font-size: 9px;
+}
+.render-formats button[aria-pressed="true"] {
+  background: #314a5e;
+  color: #e5f0f6;
+  border-color: #88aabd;
+}
+.render-formats i {
+  display: block;
+  border: 1px solid currentColor;
+  height: 23px;
+  max-width: 39px;
+}
+.render-export {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  margin: 14px -3px 12px;
+  padding: 17px 12px;
+  background: #223543;
+  border: 1px solid #496174;
+  border-radius: 7px;
+}
+.studio-ideas {
+  margin: 0 0 18px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.studio-ideas > div:first-child {
+  width: 174px;
+  flex-shrink: 0;
+}
+.studio-ideas p {
+  font-size: 10px;
+  color: #7891a6;
+  line-height: 1.5;
+  margin-top: 4px;
+}
+.studio-ideas > div:last-child {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 7px;
+  flex: 1;
+  min-width: 0;
+}
+.studio-ideas button {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  text-align: left;
+  min-height: 63px;
+  padding: 9px;
+  border: 1px solid #34475a;
+  border-radius: 6px;
+  background: #18232e;
+  min-width: 0;
+}
+.studio-ideas button:hover {
+  background: #263949;
+  border-color: #85a2b6;
+}
+.studio-ideas button > i {
+  width: 5px;
+  height: 30px;
+  border-radius: 2px;
+  flex-shrink: 0;
+  border: 1px solid #617487;
+}
+.studio-ideas svg {
+  width: 31px;
+  height: 31px;
+  flex-shrink: 0;
+  color: #a6b7c5;
+}
+.studio-ideas strong {
+  font-size: 12px;
+  font-weight: 500;
+  display: block;
+  color: #d6e2eb;
+}
+.studio-ideas small {
+  font-size: 8px;
+  color: #8ba3b9;
+  line-height: 1.5;
+  margin-top: 3px;
+  display: block;
+}
+.render-export > div {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  color: #bdd7e6;
+}
+.render-export strong {
+  font-size: 15px;
+  display: block;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  font-variant-numeric: tabular-nums;
+}
+.render-export small {
+  display: block;
+  font-size: 10px;
+  color: #8eaabd;
+  margin-top: 5px;
+}
+.render-export .studio-primary {
+  font-size: 11px;
+  margin-top: 16px;
+  padding: 10px 7px;
+  min-height: 47px;
+}
+.render-result {
+  margin: 23px 0 0;
+  padding: 0 0 18px;
+  border-bottom: 1px solid #34475b;
+}
+.render-result img {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #263442;
+  border-radius: 5px;
+}
+.render-result figcaption {
+  font-size: 10px;
+  line-height: 1.5;
+  color: #8ea8bc;
+  margin-top: 9px;
+}
+.render-result button {
+  font-size: 11px;
+}
+.is-rendering .studio-viewport {
+  pointer-events: none;
+}
+.render-spin {
+  animation: render-spin 1s linear infinite;
+}
+@keyframes render-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .render-spin {
+    animation: none;
+  }
+}
+@media (min-width: 1600px) {
+  .render-mode .studio-controls {
+    max-height: 760px;
+  }
+}
+@media (max-width: 1050px) and (min-width: 721px) {
+  .render-controls {
+    padding: 0 15px 18px;
+  }
+  .render-look-picker {
+    padding: 16px 15px;
+  }
+  .render-export {
+    padding: 14px 9px;
+  }
+}
+@media (max-width: 720px) {
+  .studio-ideas {
+    display: block;
+    margin-bottom: 14px;
+  }
+  .studio-ideas > div:first-child {
+    width: auto;
+    margin-bottom: 7px;
+  }
+  .studio-ideas > div:first-child p {
+    display: none;
+  }
+  .studio-ideas > div:last-child {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4px;
+  }
+  .studio-ideas button {
+    justify-content: center;
+    gap: 5px;
+    flex-direction: column;
+    padding: 8px 3px;
+    min-height: 66px;
+  }
+  .studio-ideas button > i,
+  .studio-ideas small {
+    display: none;
+  }
+  .studio-ideas svg {
+    width: 26px;
+    height: 26px;
+  }
+  .studio-ideas strong {
+    font-size: 10px;
+  }
+  .render-export {
+    position: static;
+  }
+  .studio-heading h1 {
+    font-size: 32px;
+  }
+  .studio-heading h1 span {
+    display: block;
+    margin-top: 3px;
+  }
+  .studio-mode-bar {
+    margin: 0 0 14px;
+    display: block;
+  }
+  .studio-mode-bar > div {
+    width: 100%;
+  }
+  .studio-mode-bar button {
+    flex: 1;
+    font-size: 11px;
+    padding: 10px 8px;
+  }
+  .studio-mode-bar > span {
+    display: none;
+  }
+  .render-mode .studio-workspace {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .render-mode .studio-viewport {
+    width: 100%;
+    border-radius: 9px;
+  }
+  .render-mode .studio-controls {
+    width: 100%;
+    max-height: none;
+    min-height: 0;
+    overflow: visible;
+  }
+  .render-mode .studio-scene-label {
+    font-size: 8px;
+    left: 12px;
+    right: 12px;
+    top: 12px;
+  }
+  .render-mode .studio-preview-label {
+    display: none;
+  }
+  .render-controls {
+    padding: 0 18px 24px;
+  }
+  .render-panel-intro {
+    padding-top: 23px;
+  }
+  .environment-options small {
+    font-size: 10px;
+  }
+  .render-controls .studio-label {
+    font-size: 13px;
+  }
+  .render-formats button {
+    font-size: 10px;
+  }
+  .render-export .studio-primary {
+    font-size: 12px;
+  }
+}
+.render-hq { margin: 0 0 18px; padding: 0 0 12px; border-bottom: 1px solid #34414e; }
+.render-hq summary { min-height: 44px; padding: 12px 0; cursor: pointer; color: #c5d8e5; }
+.render-hq summary:focus-visible { outline: 2px solid #9bc9e5; outline-offset: 3px; }

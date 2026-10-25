@@ -1,0 +1,47 @@
+BMW E39 5-Series 1995-2004
+Author: Merc_TV (szymonpasterczyk)
+Source: https://sketchfab.com/3d-models/bmw-e39-5-series-1995-2004-4a918a985c0a4ea89ac3d65e1f95c0b7
+License: Creative Commons Attribution 4.0 International
+https://creativecommons.org/licenses/by/4.0/
+
+Changes: selected sedan configuration; removed alternative body styles and
+engine variants; placed four wheels; adjusted materials; animated hood.
+Eight selectable engine regions and an illustrative oil-filter exploded view
+are provided for this application, not as repair CAD.
+Original attribution does not imply endorsement of this app.
+
+M-Technik front assembly added in 0.9:
+BMW 5 Series E39 MK4 1995-2003
+Author/uploader: Merc_TV (szymonpasterczyk)
+Source: https://sketchfab.com/3d-models/bmw-5-series-e39-mk4-1995-2003-a6a2a783c59b47e1b9d56e08bebcdfc9
+License shown on source/download: CC BY 4.0
+https://creativecommons.org/licenses/by/4.0/
+Changes: isolated M-Technik front, removed alternate-layout translation,
+replaced all materials, omitted source textures, added neutral plate.
+Original upstream rights chain beyond uploader has not been independently
+confirmed. Asset names indicate possible game/mod history; this is not proof
+of infringement. The stated license covers only rights the licensor can grant.
+Local integration does not establish a publication clearance or physical fit.
+
+0.10.2 correction: the complete 0.9 visual basis is active again, including
+the original cabin, material rules and simplified procedural engine regions.
+The active GLB and PhotoInterior are byte-identical to the saved 0.9 sources.
+The rejected 0.10 cabin, M52 inline-six assembly, outer-skin fits, extra mirror
+panes, M-Technik rear and wheel experiments remain archived, not displayed.
+Engine camera controls and motion-settled exports remain available.
+
+Archived 0.10 additions from the same Merc_TV MK4 source: isolated M-Technik rear bumper,
+matching LHD interior/exterior mirror faces and four fitted red rear-lamp skins.
+The detailed inline-six assembly is explicitly named M52 in the source. It is
+used as a visual reference, not as an exact reconstruction of the user's M54.
+Source textures are omitted; neutral PBR materials and selectable regions added.
+Original source and isolated assembly hashes are in assets/source/*-proof.json.
+
+Own 0.10 changes: bounded outer skins for roof, four doors and trunk; procedural
+wheel/tire/brake geometry; closed tail-lamp optics, diffuser and dark twin tips;
+instrument dials, wheel, radio/climate controls, shift knob, cabin UV/materials.
+All vehicle dimensions, wheel identity, paint codes and technical fit remain
+unverified. No private reference photos, real plates or vehicle records included.
+
+Own 0.9 changes: sparse controlled front shoulders and mesh-derived normals,
+open reflector housings, lamp inserts, dielectric window materials and plate.
