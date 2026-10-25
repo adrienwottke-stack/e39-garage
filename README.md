@@ -1,5 +1,6 @@
 # E39 Garage
 
+[Alle öffentlichen Arbeitsproben im Überblick](https://github.com/adrienwottke-stack/engine-playground/blob/main/PORTFOLIO.md)
 Digitale Fahrzeuggarage mit interaktiver 3D-Konfiguration, Teilekatalog und lokaler Fahrzeugakte.
 
 ## Projekt und Beitrag
